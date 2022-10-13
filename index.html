@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css.css">
 
+
 </head>
 <body>
 <div class="wrapper">
@@ -16,21 +17,38 @@
             <div class="reg_main">
                 <div class="login_form">
                     <h1 class="name">Логин</h1>
-                    <input type="text" class="login">
-                    <ul>
-                        <li>Длинна не менее 8 символов</li>
-                        <li>Содержит толлько английские заглавные и строчные буквы</li>
+                    <input type="text" class="login" onmouseover="viewLogin()" onmouseleave="noViewLogin()"  >
+                    <ul id="login_validate" class="hide" >
+                        <li id="login_length">Длинна не менее 8 символов</li>
+                        <li id="login_symbol">Содержит толлько английские заглавные и строчные буквы</li>
                     </ul>
                 </div>
                 <div class="password_form">
                     <h1 class="name">Пароль</h1>
-                    <input type="text" class="password">
+                    <input type="password" class="password" onmouseover="viewPassword()" onmouseleave="noViewPassword()" >
+                    <ul id="password_validate" class="hide">
+                        <li id="password_length">Длинна не менее 11 символов</li>
+                        <li id="password_symbol">Содержит толлько цифры</li>
+                    </ul>
                 </div>
+                <button class="enter">Войти</button>
             </div>
+
         </div>
     </div>
+
+
+
+
+
     <div class="footer"></div>
 
+
+
+
+
 </div>
+<script src="js.js"></script>
 </body>
+
 </html>

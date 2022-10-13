@@ -35,7 +35,7 @@ body {
     height: 400px;
     background: wheat;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 125px;
 }
 
 .reg_main{
@@ -80,7 +80,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 50px;
+
 }
 .login{
     width: 250px;
@@ -96,3 +96,16 @@ body {
 ul{
     font-size: 12px;
 }
+
+.enter{
+    width: 100px;
+    height: 30px;
+}
+
+.hide{
+    display: none;
+}
+.enter{
+    margin-top: 40px;
+}
+
