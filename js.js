@@ -9,9 +9,13 @@ let button = document.querySelectorAll('.enter')
 
 
 let regular = {
-    login: /^[a-zA-z]{8,}$/,
-    password: /^[\S]{11,}$/,
+    login: /^[A-z]+$/,
+    loginLength: /^.{8,}$/,
+    password: /^[0-9]+$/,
+    passwordLength: /^.{11,11}$/
 }
+
+
 
 
 function viewLogin(){

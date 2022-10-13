@@ -17,7 +17,7 @@
             <div class="reg_main">
                 <div class="login_form">
                     <h1 class="name">Логин</h1>
-                    <input type="text" class="login" onmouseover="viewLogin()" onmouseleave="noViewLogin()"  >
+                    <input type="text" class="login" onclick="viewLogin()" onblur="noViewLogin()" autocomplete="off">
                     <ul id="login_validate" class="hide" >
                         <li id="login_length">Длинна не менее 8 символов</li>
                         <li id="login_symbol">Содержит толлько английские заглавные и строчные буквы</li>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="password_form">
                     <h1 class="name">Пароль</h1>
-                    <input type="password" class="password" onmouseover="viewPassword()" onmouseleave="noViewPassword()" >
+                    <input type="password" class="password" onclick="viewPassword()" onblur="noViewPassword()" autocomplete="off">
                     <ul id="password_validate" class="hide">
                         <li id="password_length">Длинна не менее 11 символов</li>
                         <li id="password_symbol">Содержит толлько цифры</li>
