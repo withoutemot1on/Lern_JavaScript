@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+        </header>
+        <main class="main">
+            <div class="main__header">
+                <h1>Вход в корпоративну часть</h1>
+            </div>
+            <form class="form">
+                <div class="login_form">
+                    <h1 class="login__header">Логин</h1>
+                    <input type="text" name="login" class="login inputForm">
+                    <ul class="login__tips hide">
+                        <li id="login_length" class="tip tip_login"> Длина не менее 8 символов</li>
+                        <li id="login_eng" class="tip tip_login">Содержит только английские заглавные и строчные буквы</li>
+                    </ul>
+                </div>
+                <div class="password_form">
+                    <h1 class="password__header">Пароль</h1>
+                    <input type="password" name="password" class="password inputForm">
+                    <ul class="password__tips hide">
+                        <li id="password_length" class="tip tip_password"> Длина должна быть не мене 11 символов</li>
+                        <li id="password_whitespace" class="tip tip_password"> Содержит только символы без пробелов</li>
+                    </ul>
+                </div>
+                <input class="btn" type="button" value="Войти">
+            </form>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
