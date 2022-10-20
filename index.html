@@ -4,49 +4,41 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css.css">
-
-
 </head>
 <body>
 <div class="wrapper">
+    <header class="header">
 
-    <div class="header"></div>
-    <div class="main">
-        <div class="reg_menu">
-            <h1>Вход в корпративную часть</h1>
-            <div class="reg_main">
+    </header>
+
+    <main class="main">
+        <div class="form">
+            <div class="form__header">
+                <h1>Вход в корпоративную часть</h1>
+            </div>
+            <form action="#" class="reg_menu">
+                <h3>Логин</h3>
                 <div class="login_form">
-                    <h1 class="name">Логин</h1>
-                    <input type="text" class="login" onclick="viewLogin()" onblur="noViewLogin()" autocomplete="off">
-                    <ul id="login_validate" class="hide" >
-                        <li id="login_length">Длинна не менее 8 символов</li>
-                        <li id="login_symbol">Содержит толлько английские заглавные и строчные буквы</li>
+                    <input type="text" class="login" id="input_login" onmouseenter="showTips()" onmouseleave="hideTips()" autocomplete="off" required>
+                    <ul class="form__tips login_tips hide">
+                        <li class="tips login_tip" id="first_login_tip">Длина не менее 8 символов</li>
+                        <li class="tips login_tip" id="second_login_tip">Содержит только английские заглавные и строчные буквы</li>
                     </ul>
                 </div>
                 <div class="password_form">
-                    <h1 class="name">Пароль</h1>
-                    <input type="password" class="password" onclick="viewPassword()" onblur="noViewPassword()" autocomplete="off">
-                    <ul id="password_validate" class="hide">
-                        <li id="password_length">Длинна не менее 11 символов</li>
-                        <li id="password_symbol">Содержит толлько цифры</li>
+                    <h3>Пароль</h3>
+                    <input type="password" name="password" class="password" id="input_password" autocomplete="off" required>
+                    <ul class="form__tips password_tips hide">
+                        <li class="tips password_tip" id="first_password_tip">Длина должна быть не более 11 символов</li>
+                        <li class="tips password_tip" id="second_password_tip">Содержит только цифры без пробелов</li>
                     </ul>
                 </div>
-                <button class="enter">Войти</button>
-            </div>
-
+                <input class="enter" type="submit" value="Войти">
+            </form>
         </div>
-    </div>
-
-
-
-
-
-    <div class="footer"></div>
-
-
-
-
-
+    </main>
+    <footer class="footer">
+    </footer>
 </div>
 <script src="js.js"></script>
 </body>
